@@ -1,0 +1,150 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/><title>Customer Ratings – Morda Café</title>
+<style>
+.rating-overview{display:flex;gap:48px;align-items:center;flex-wrap:wrap;margin-bottom:56px}
+.rating-big{text-align:center;flex-shrink:0}
+.rating-number{font-family:'Playfair Display',serif;font-size:5.5rem;font-weight:900;color:var(--gold);line-height:1}
+.rating-stars-big{font-size:2rem;color:var(--gold);letter-spacing:4px;margin:8px 0}
+.rating-count{color:rgba(247,233,210,.6);font-size:.85rem}
+.rating-bars{flex:1;min-width:220px}
+.bar-row{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.bar-label{font-size:.8rem;color:rgba(247,233,210,.7);width:26px;flex-shrink:0;font-weight:600}
+.bar-track{flex:1;height:9px;background:rgba(247,233,210,.1);border-radius:6px;overflow:hidden}
+.bar-fill{height:100%;background:var(--grad-btn);border-radius:6px}
+.bar-pct{font-size:.75rem;color:rgba(247,233,210,.55);width:34px;text-align:right;flex-shrink:0}
+.rev-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:8px}
+.rev-card{background:rgba(255,255,255,.06);backdrop-filter:blur(12px);border:1px solid rgba(194,138,69,.15);border-radius:16px;padding:22px;transition:all .3s ease}
+.rev-card:hover{transform:translateY(-4px);background:rgba(255,255,255,.1)}
+.rev-header{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.rev-avatar{width:42px;height:42px;border-radius:50%;background:var(--grad-btn);color:var(--white);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.88rem;flex-shrink:0}
+.rev-meta{flex:1}.rev-meta strong{display:block;color:var(--white);font-size:.88rem}
+.rev-meta span{color:rgba(247,233,210,.5);font-size:.72rem}
+.rev-stars{display:flex;gap:2px}
+.star{color:rgba(247,233,210,.15);font-size:.95rem}.star.filled{color:var(--gold)}
+.rev-text{color:rgba(247,233,210,.75);font-size:.83rem;line-height:1.65;font-style:italic;margin-bottom:8px}
+.rev-date{color:rgba(247,233,210,.35);font-size:.7rem}
+.badge-row{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-bottom:40px}
+.rating-badge{background:rgba(255,255,255,.06);border:1px solid rgba(194,138,69,.25);border-radius:14px;padding:16px 22px;text-align:center;backdrop-filter:blur(8px)}
+.badge-num{font-family:'Playfair Display',serif;font-size:1.9rem;color:var(--gold);font-weight:900;display:block}
+.badge-lbl{font-size:.68rem;color:rgba(247,233,210,.55);text-transform:uppercase;letter-spacing:2px}
+.score-mini{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.score-item{background:rgba(255,255,255,.05);border-radius:12px;padding:14px;text-align:center;border:1px solid rgba(194,138,69,.1)}
+.score-icon{font-size:1.4rem;display:block;margin-bottom:4px}
+.score-lbl{font-size:.68rem;color:rgba(247,233,210,.5);margin-bottom:2px}
+.score-val{font-size:.88rem;font-weight:700;color:var(--gold)}
+@media(max-width:768px){.rev-grid{grid-template-columns:1fr}.rating-overview{gap:24px}.rating-number{font-size:4rem}}
+</style>
+</head><body>
+<div class="page-wrap">
+<div class="page-curtain" id="pageCurtain"></div>
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo-link" data-nav><img class="site-logo nav-logo-img" src="" alt="Morda Café"/></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks"><li><a href="index.html" class="nav-link" data-nav>Home</a></li><li><a href="about.html" class="nav-link" data-nav>About</a></li><li><a href="menu.html" class="nav-link" data-nav>Menu</a></li><li><a href="gallery.html" class="nav-link" data-nav>Gallery</a></li><li><a href="ratings.html" class="nav-link active" data-nav>Ratings</a></li><li><a href="contact.html" class="nav-link" data-nav>Contact</a></li>
+      <li><a href="menu.html" class="nav-cta" data-nav>Order Now</a></li>
+    </ul>
+  </div>
+</nav>
+<section class="page-hero glass-hero">
+  <div class="container page-hero-inner">
+    <span class="section-label">What Our Customers Say</span>
+    <h1>Loved by <em>Johannesburg</em></h1>
+    <p>Real reviews from real people — the Morda Café community speaks for itself.</p>
+  </div>
+</section>
+<section class="glass-section" style="padding:80px 0">
+  <div class="container">
+    <span class="section-label">Overall Rating</span>
+    <h2 class="section-title light" style="margin-bottom:36px">Our Reputation</h2>
+    <div class="rating-overview">
+      <div class="rating-big reveal">
+        <div class="rating-number">4.8</div>
+        <div class="rating-stars-big">★★★★★</div>
+        <div class="rating-count">Based on 247 reviews</div>
+      </div>
+      <div class="rating-bars reveal">
+        <div class="bar-row"><span class="bar-label">5★</span><div class="bar-track"><div class="bar-fill" style="width:84%"></div></div><span class="bar-pct">84%</span></div>
+        <div class="bar-row"><span class="bar-label">4★</span><div class="bar-track"><div class="bar-fill" style="width:11%"></div></div><span class="bar-pct">11%</span></div>
+        <div class="bar-row"><span class="bar-label">3★</span><div class="bar-track"><div class="bar-fill" style="width:4%"></div></div><span class="bar-pct">4%</span></div>
+        <div class="bar-row"><span class="bar-label">2★</span><div class="bar-track"><div class="bar-fill" style="width:1%"></div></div><span class="bar-pct">1%</span></div>
+        <div class="bar-row"><span class="bar-label">1★</span><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span class="bar-pct">0%</span></div>
+      </div>
+      <div class="score-mini reveal">
+        <div class="score-item"><span class="score-icon">☕</span><div class="score-lbl">Coffee</div><div class="score-val">4.9/5</div></div>
+        <div class="score-item"><span class="score-icon">🍽</span><div class="score-lbl">Food</div><div class="score-val">4.8/5</div></div>
+        <div class="score-item"><span class="score-icon">😊</span><div class="score-lbl">Service</div><div class="score-val">4.9/5</div></div>
+        <div class="score-item"><span class="score-icon">🏠</span><div class="score-lbl">Atmosphere</div><div class="score-val">4.8/5</div></div>
+      </div>
+    </div>
+    <span class="section-label">Customer Reviews</span>
+    <h2 class="section-title light" style="margin-bottom:28px">What People Are Saying</h2>
+    <div class="rev-grid"><div class="rev-card reveal"><div class="rev-header"><div class="rev-avatar">TM</div><div class="rev-meta"><strong>Thabo M.</strong><span>Sandton</span></div><div class="rev-stars"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></div></div><p class="rev-text">"The Brown Sugar Boba Latte is absolutely divine! Best café in Sandton, hands down. I come here at least three times a week. Kabelo has built something truly special."</p><span class="rev-date">2026-05-18</span></div><div class="rev-card reveal"><div class="rev-header"><div class="rev-avatar">PN</div><div class="rev-meta"><strong>Priya N.</strong><span>Rosebank</span></div><div class="rev-stars"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></div></div><p class="rev-text">"Kabelo and his team are incredible. The Breakfast Croissant is my weekly ritual. Coffee is consistently excellent and the atmosphere is perfect for working."</p><span class="rev-date">2026-05-15</span></div><div class="rev-card reveal"><div class="rev-header"><div class="rev-avatar">JK</div><div class="rev-meta"><strong>James K.</strong><span>Bryanston</span></div><div class="rev-stars"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></div></div><p class="rev-text">"Amazing coffee, beautiful warm space, super fast service. The Berry Sunrise Smoothie is unreal. I drive past three other cafés just to come here."</p><span class="rev-date">2026-05-12</span></div><div class="rev-card reveal"><div class="rev-header"><div class="rev-avatar">LD</div><div class="rev-meta"><strong>Lerato D.</strong><span>Morningside</span></div><div class="rev-stars"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></div></div><p class="rev-text">"The French Toast Stack is a solid 10/10. Paired with the Signature Latte and your morning is made. Stunning food and beautiful café experience!"</p><span class="rev-date">2026-05-10</span></div><div class="rev-card reveal"><div class="rev-header"><div class="rev-avatar">AS</div><div class="rev-meta"><strong>Amara S.</strong><span>Hyde Park</span></div><div class="rev-stars"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star">☆</span></div></div><p class="rev-text">"Great smoothies and the avo toast is genuinely perfect. Slight wait during morning peak hours but worth it. The café interior is beautiful for meetings."</p><span class="rev-date">2026-05-08</span></div><div class="rev-card reveal"><div class="rev-header"><div class="rev-avatar">WL</div><div class="rev-meta"><strong>Wei L.</strong><span>Fourways</span></div><div class="rev-stars"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></div></div><p class="rev-text">"Best boba in Joburg, no question. The Taro Boba is creamy, smooth and delicious. Morda Café has set a completely new standard in Johannesburg."</p><span class="rev-date">2026-05-05</span></div><div class="rev-card reveal"><div class="rev-header"><div class="rev-avatar">MT</div><div class="rev-meta"><strong>Marcus T.</strong><span>Midrand</span></div><div class="rev-stars"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></div></div><p class="rev-text">"Wonderful atmosphere and coffee consistently excellent. Great Wi-Fi makes it my go-to work spot. The Omelette Deluxe is my Monday morning ritual!"</p><span class="rev-date">2026-04-30</span></div><div class="rev-card reveal"><div class="rev-header"><div class="rev-avatar">ZP</div><div class="rev-meta"><strong>Zanele P.</strong><span>Sandton</span></div><div class="rev-stars"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></div></div><p class="rev-text">"Came here for the first time and left wanting to come every day. Kabelo has created something truly special. The Smashed Avo Toast is a masterpiece."</p><span class="rev-date">2026-04-28</span></div><div class="rev-card reveal"><div class="rev-header"><div class="rev-avatar">SM</div><div class="rev-meta"><strong>Sipho M.</strong><span>Alexandra</span></div><div class="rev-stars"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></div></div><p class="rev-text">"The Morda Energy Smoothie before gym is unbeatable! Staff are always warm and welcoming — feels like a second home. Every star is deserved!"</p><span class="rev-date">2026-04-25</span></div><div class="rev-card reveal"><div class="rev-header"><div class="rev-avatar">FR</div><div class="rev-meta"><strong>Fatima R.</strong><span>Rivonia</span></div><div class="rev-stars"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star">☆</span></div></div><p class="rev-text">"Lovely café with a real premium feel. The Lemon Drizzle Cake pairs perfectly with an Oat Milk Latte. Worth every rand. My favourite spot in The MARC."</p><span class="rev-date">2026-04-22</span></div></div>
+  </div>
+</section>
+<section class="glass-section" style="padding:80px 24px;text-align:center">
+  <div class="container">
+    <div class="badge-row reveal">
+      <div class="rating-badge"><span class="badge-num">247+</span><span class="badge-lbl">Reviews</span></div>
+      <div class="rating-badge"><span class="badge-num">4.8★</span><span class="badge-lbl">Rating</span></div>
+      <div class="rating-badge"><span class="badge-num">98%</span><span class="badge-lbl">Recommend</span></div>
+      <div class="rating-badge"><span class="badge-num">2023</span><span class="badge-lbl">Est. Sandton</span></div>
+    </div>
+    <h2 class="reveal" style="color:var(--white);font-size:clamp(1.6rem,4vw,2.6rem);margin-bottom:12px">Visited Morda Café?</h2>
+    <p class="reveal" style="color:rgba(247,233,210,.75);max-width:520px;margin:0 auto 32px">Your feedback helps us grow. Leave us a Google review — it means the world to Kabelo and the whole team.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap" class="reveal">
+      <a href="https://maps.google.com" target="_blank" class="btn btn-gold">Leave a Google Review ⭐</a>
+      <a href="contact.html" class="btn btn-outline" data-nav>Visit Us Today</a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img class="site-logo footer-logo" src="" alt="Morda Café"/>
+      <p>A warm modern café serving craft coffee, boba, smoothies, fresh breakfasts, pastries &amp; light meals in the heart of Sandton.</p>
+      <div class="social-links"><a href="https://instagram.com/mordacafe" target="_blank" aria-label="Instagram">📸</a><a href="https://facebook.com/mordacafe" target="_blank" aria-label="Facebook">👍</a><a href="https://tiktok.com/@mordacafe" target="_blank" aria-label="TikTok">🎵</a></div>
+    </div>
+    <div class="footer-links"><h4>Navigate</h4><ul>
+      <li><a href="index.html" data-nav>Home</a></li><li><a href="about.html" data-nav>About</a></li>
+      <li><a href="menu.html" data-nav>Menu</a></li><li><a href="gallery.html" data-nav>Gallery</a></li>
+      <li><a href="ratings.html" data-nav>Ratings</a></li><li><a href="contact.html" data-nav>Contact</a></li></ul></div>
+    <div class="footer-links"><h4>Menu</h4><ul>
+      <li><a href="menu.html" data-nav>Coffee</a></li><li><a href="menu.html" data-nav>Boba Tea</a></li>
+      <li><a href="menu.html" data-nav>Smoothies</a></li><li><a href="menu.html" data-nav>Toast</a></li>
+      <li><a href="menu.html" data-nav>Breakfast</a></li><li><a href="menu.html" data-nav>Pastries</a></li></ul></div>
+    <div class="footer-links"><h4>Visit Us</h4><ul>
+      <li>Shop 12, The MARC</li><li>129 Rivonia Rd, Sandton</li>
+      <li><a href="tel:+27115678901" style="color:inherit">+27 11 567 8901</a></li>
+      <li><a href="mailto:hello@mordacafe.co.za" style="color:inherit">hello@mordacafe.co.za</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 Morda Café · All rights reserved · Powered by <strong style="color:var(--gold)">Maphake Automation</strong> ⚡</p></div>
+</footer>
+</div>
+<div class="chat-widget" id="chatWidget">
+  <div class="chat-avatar-bubble" id="chatToggle" aria-label="Chat with Morda AI">
+    <div class="barista-avatar"><svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="38" fill="#1F0404" stroke="#C28A45" stroke-width="2.5"/><circle cx="40" cy="33" r="17" fill="#E8B98B"/><rect x="25" y="12" width="30" height="8" rx="4" fill="#2B0B08"/><rect x="23" y="8" width="34" height="7" rx="3.5" fill="#1F0404"/><ellipse cx="33" cy="31" rx="3" ry="3.5" fill="#1F0404" class="eye-left"/><ellipse cx="47" cy="31" rx="3" ry="3.5" fill="#1F0404" class="eye-right"/><circle cx="34" cy="30" r="1" fill="#fff" opacity="0.8"/><circle cx="48" cy="30" r="1" fill="#fff" opacity="0.8"/><path d="M32 39 Q40 46 48 39" stroke="#8B4513" stroke-width="2" fill="none" stroke-linecap="round"/><ellipse cx="28" cy="37" rx="5" ry="3" fill="#FF9B9B" opacity="0.35"/><ellipse cx="52" cy="37" rx="5" ry="3" fill="#FF9B9B" opacity="0.35"/><path d="M18 53 Q40 47 62 53 L64 80 H16 Z" fill="#1F0404"/><path d="M24 55 Q40 50 56 55 L54 80 H26 Z" fill="#F7E9D2"/><rect x="57" y="55" width="13" height="11" rx="2.5" fill="#C28A45"/><path d="M70 59 Q74 59 74 63 Q74 67 70 67" stroke="#C28A45" stroke-width="2" fill="none" stroke-linecap="round"/><rect x="59" y="53" width="9" height="3" rx="1.5" fill="#E8D3B0"/><path d="M61 52 Q63 47 61 43" stroke="rgba(247,233,210,0.7)" stroke-width="1.5" fill="none" stroke-linecap="round" class="steam-path"/><path d="M65 51 Q67 46 65 42" stroke="rgba(247,233,210,0.7)" stroke-width="1.5" fill="none" stroke-linecap="round" class="steam-path" style="animation-delay:.4s"/></svg></div>
+    <div class="avatar-pulse"></div>
+  </div>
+  <div class="chat-panel" id="chatPanel">
+    <div class="chat-header">
+      <div class="chat-header-avatar"><svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" width="44" height="44"><circle cx="30" cy="30" r="28" fill="#1F0404" stroke="#C28A45" stroke-width="2"/><circle cx="30" cy="24" r="12" fill="#E8B98B"/><rect x="20" y="11" width="20" height="5" rx="2.5" fill="#2B0B08"/><rect x="18" y="7" width="24" height="6" rx="3" fill="#1F0404"/><ellipse cx="25" cy="22" rx="2.5" ry="3" fill="#1F0404"/><ellipse cx="35" cy="22" rx="2.5" ry="3" fill="#1F0404"/><path d="M24 29 Q30 34 36 29" stroke="#8B4513" stroke-width="1.5" fill="none" stroke-linecap="round"/><ellipse cx="21" cy="27" rx="3.5" ry="2" fill="#FF9B9B" opacity="0.35"/><ellipse cx="39" cy="27" rx="3.5" ry="2" fill="#FF9B9B" opacity="0.35"/><path d="M14 38 Q30 33 46 38 L48 60 H12 Z" fill="#1F0404"/><path d="M18 40 Q30 36 42 40 L40 60 H20 Z" fill="#F7E9D2"/></svg></div>
+      <div class="chat-header-info"><h3>Morda AI Barista</h3><span class="chat-status"><span class="status-dot"></span> Online 24/7</span></div>
+      <button class="chat-close" id="chatClose">✕</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-msg bot"><div class="msg-icon">☕</div><p>Welcome to Morda Café! 😊 I'm your AI Barista — ask me <strong>anything</strong> about our menu, prices, hours, boba, orders, events, or anything else about the café. I'm here 24/7!</p></div>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" id="chatInput" placeholder="Ask anything about Morda Café..." autocomplete="off"/>
+      <button id="chatSend" aria-label="Send">➤</button>
+    </div>
+    <div class="chat-footer-brand"><span>Powered by</span><strong>Maphake Automation</strong><span>⚡</span></div>
+  </div>
+</div><canvas id="swirlCanvas"></canvas><script src="assets.js"></script><script src="app.js"></script>
+</body></html>
