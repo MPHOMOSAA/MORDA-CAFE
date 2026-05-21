@@ -5,23 +5,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/><title>Menu – Morda Café</title>
-</head><body>
-<div class="page-wrap">
+</head><body><div class="page-wrap">
 <div class="page-curtain" id="pageCurtain"></div>
 <nav class="navbar" id="navbar">
   <div class="nav-container">
-    <a href="index.html" class="nav-logo-link" data-nav><img class="site-logo nav-logo-img" src="" alt="Morda Café"/></a>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
-    <ul class="nav-links" id="navLinks"><li><a href="index.html" class="nav-link" data-nav>Home</a></li><li><a href="about.html" class="nav-link" data-nav>About</a></li><li><a href="menu.html" class="nav-link active" data-nav>Menu</a></li><li><a href="gallery.html" class="nav-link" data-nav>Gallery</a></li><li><a href="ratings.html" class="nav-link" data-nav>Ratings</a></li><li><a href="contact.html" class="nav-link" data-nav>Contact</a></li>
-      <li><a href="menu.html" class="nav-cta" data-nav>Order Now</a></li>
-    </ul>
+    <a href="index.html" class="nav-logo-link" data-nav><img class="nav-logo-img" src="data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABh" alt="Morda Café"/></a>
+    <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks"><li><a href="index.html" class="nav-link" data-nav>Home</a></li><li><a href="about.html" class="nav-link" data-nav>About</a></li><li><a href="menu.html" class="nav-link active" data-nav>Menu</a></li><li><a href="gallery.html" class="nav-link" data-nav>Gallery</a></li><li><a href="ratings.html" class="nav-link" data-nav>Ratings</a></li><li><a href="contact.html" class="nav-link" data-nav>Contact</a></li><li><a href="menu.html" class="nav-cta" data-nav>Order Now</a></li></ul>
   </div>
 </nav>
 <section class="page-hero glass-hero">
   <div class="container page-hero-inner">
     <span class="section-label">Full Menu</span>
     <h1>Order Anything, <em>Anytime</em></h1>
-    <p>Craft espresso, handcrafted boba, cold smoothies, and hearty breakfasts — all in ZAR. Add to cart and order via Uber Eats or WhatsApp.</p>
+    <p>Browse all categories, add to your cart, and place your order for delivery or collection.</p>
   </div>
 </section>
 <section class="menu-main glass-section">
@@ -36,479 +33,196 @@
       <button class="tab-btn" data-tab="lightmeals">🥗 Light Meals</button>
     </div>
     <div class="tab-panel active" id="tab-coffee"><p class="tab-cat-label">Signature Coffees</p><div class="menu-items">
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Morda Signature Latte</span><span class="mi-desc">Smooth espresso with steamed milk and caramel notes — our bestseller</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R48</span>
-    <button class="add-btn" onclick="CART.add('Morda Signature Latte','R48','Smooth espresso with steamed milk and ca')" aria-label="Add Morda Signature Latte">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Classic Cappuccino</span><span class="mi-desc">Rich espresso, silky foam, dusted cocoa</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R42</span>
-    <button class="add-btn" onclick="CART.add('Classic Cappuccino','R42','Rich espresso, silky foam, dusted cocoa')" aria-label="Add Classic Cappuccino">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Americano</span><span class="mi-desc">Bold espresso topped with hot water, clean and strong</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R35</span>
-    <button class="add-btn" onclick="CART.add('Americano','R35','Bold espresso topped with hot water, cle')" aria-label="Add Americano">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Flat White</span><span class="mi-desc">Creamy, strong, and velvety smooth</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R44</span>
-    <button class="add-btn" onclick="CART.add('Flat White','R44','Creamy, strong, and velvety smooth')" aria-label="Add Flat White">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Caramel Macchiato</span><span class="mi-desc">Espresso layered with vanilla milk and caramel drizzle</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R55</span>
-    <button class="add-btn" onclick="CART.add('Caramel Macchiato','R55','Espresso layered with vanilla milk and c')" aria-label="Add Caramel Macchiato">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Iced Coffee</span><span class="mi-desc">Chilled espresso with milk over ice — refreshing</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R45</span>
-    <button class="add-btn" onclick="CART.add('Iced Coffee','R45','Chilled espresso with milk over ice — re')" aria-label="Add Iced Coffee">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Mocha Bliss</span><span class="mi-desc">Espresso, chocolate, steamed milk, and whipped cream</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R58</span>
-    <button class="add-btn" onclick="CART.add('Mocha Bliss','R58','Espresso, chocolate, steamed milk, and w')" aria-label="Add Mocha Bliss">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Cold Brew</span><span class="mi-desc">Slow-steeped 12-hour cold brew, bold and ultra-smooth</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R52</span>
-    <button class="add-btn" onclick="CART.add('Cold Brew','R52','Slow-steeped 12-hour cold brew, bold and')" aria-label="Add Cold Brew">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Espresso Shot</span><span class="mi-desc">Pure concentrated espresso — single or double</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R28</span>
-    <button class="add-btn" onclick="CART.add('Espresso Shot','R28','Pure concentrated espresso — single or d')" aria-label="Add Espresso Shot">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Cortado</span><span class="mi-desc">Equal parts espresso and warm steamed milk</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R38</span>
-    <button class="add-btn" onclick="CART.add('Cortado','R38','Equal parts espresso and warm steamed mi')" aria-label="Add Cortado">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Oat Milk Latte</span><span class="mi-desc">Signature Latte with creamy plant-based oat milk</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R52</span>
-    <button class="add-btn" onclick="CART.add('Oat Milk Latte','R52','Signature Latte with creamy plant-based ')" aria-label="Add Oat Milk Latte">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Vanilla Latte</span><span class="mi-desc">Espresso, steamed milk, and house-made vanilla syrup</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R50</span>
-    <button class="add-btn" onclick="CART.add('Vanilla Latte','R50','Espresso, steamed milk, and house-made v')" aria-label="Add Vanilla Latte">+</button>
-  </div>
-</div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Morda Signature Latte</span><span class="mi-desc">Smooth espresso with steamed milk and caramel notes — our bestseller</span></div><div class="mi-right"><span class="mi-price">R48</span><button class="add-btn" onclick="CART.add('Morda Signature Latte','R48','Smooth espresso with steamed milk and ca')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Classic Cappuccino</span><span class="mi-desc">Rich espresso, silky foam, dusted cocoa</span></div><div class="mi-right"><span class="mi-price">R42</span><button class="add-btn" onclick="CART.add('Classic Cappuccino','R42','Rich espresso, silky foam, dusted cocoa')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Americano</span><span class="mi-desc">Bold espresso topped with hot water, clean and strong</span></div><div class="mi-right"><span class="mi-price">R35</span><button class="add-btn" onclick="CART.add('Americano','R35','Bold espresso topped with hot water, cle')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Flat White</span><span class="mi-desc">Creamy, strong, and velvety smooth</span></div><div class="mi-right"><span class="mi-price">R44</span><button class="add-btn" onclick="CART.add('Flat White','R44','Creamy, strong, and velvety smooth')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Caramel Macchiato</span><span class="mi-desc">Espresso layered with vanilla milk and caramel drizzle</span></div><div class="mi-right"><span class="mi-price">R55</span><button class="add-btn" onclick="CART.add('Caramel Macchiato','R55','Espresso layered with vanilla milk and c')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Iced Coffee</span><span class="mi-desc">Chilled espresso with milk over ice</span></div><div class="mi-right"><span class="mi-price">R45</span><button class="add-btn" onclick="CART.add('Iced Coffee','R45','Chilled espresso with milk over ice')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Mocha Bliss</span><span class="mi-desc">Espresso, chocolate, steamed milk, and whipped cream</span></div><div class="mi-right"><span class="mi-price">R58</span><button class="add-btn" onclick="CART.add('Mocha Bliss','R58','Espresso, chocolate, steamed milk, and w')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Cold Brew</span><span class="mi-desc">Slow-steeped 12-hour cold brew, bold and ultra-smooth</span></div><div class="mi-right"><span class="mi-price">R52</span><button class="add-btn" onclick="CART.add('Cold Brew','R52','Slow-steeped 12-hour cold brew, bold and')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Espresso Shot</span><span class="mi-desc">Pure concentrated espresso — single or double</span></div><div class="mi-right"><span class="mi-price">R28</span><button class="add-btn" onclick="CART.add('Espresso Shot','R28','Pure concentrated espresso — single or d')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Cortado</span><span class="mi-desc">Equal parts espresso and warm steamed milk</span></div><div class="mi-right"><span class="mi-price">R38</span><button class="add-btn" onclick="CART.add('Cortado','R38','Equal parts espresso and warm steamed mi')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Oat Milk Latte</span><span class="mi-desc">Signature Latte with creamy plant-based oat milk</span></div><div class="mi-right"><span class="mi-price">R52</span><button class="add-btn" onclick="CART.add('Oat Milk Latte','R52','Signature Latte with creamy plant-based ')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Vanilla Latte</span><span class="mi-desc">Espresso, steamed milk, and house-made vanilla syrup</span></div><div class="mi-right"><span class="mi-price">R50</span><button class="add-btn" onclick="CART.add('Vanilla Latte','R50','Espresso, steamed milk, and house-made v')">+</button></div></div>
     </div></div>
     <div class="tab-panel" id="tab-boba"><p class="tab-cat-label">Handcrafted Boba Tea</p><div class="menu-items">
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Classic Milk Tea Boba</span><span class="mi-desc">Creamy black tea with real tapioca pearls</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R55</span>
-    <button class="add-btn" onclick="CART.add('Classic Milk Tea Boba','R55','Creamy black tea with real tapioca pearl')" aria-label="Add Classic Milk Tea Boba">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Taro Boba</span><span class="mi-desc">Smooth purple taro with milk and tapioca pearls</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R58</span>
-    <button class="add-btn" onclick="CART.add('Taro Boba','R58','Smooth purple taro with milk and tapioca')" aria-label="Add Taro Boba">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Brown Sugar Boba Latte</span><span class="mi-desc">Rich brown sugar syrup, silky milk and chewy pearls</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R62</span>
-    <button class="add-btn" onclick="CART.add('Brown Sugar Boba Latte','R62','Rich brown sugar syrup, silky milk and c')" aria-label="Add Brown Sugar Boba Latte">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Matcha Boba</span><span class="mi-desc">Premium ceremonial matcha with milk and pearls</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R60</span>
-    <button class="add-btn" onclick="CART.add('Matcha Boba','R60','Premium ceremonial matcha with milk and ')" aria-label="Add Matcha Boba">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Strawberry Boba</span><span class="mi-desc">Fresh strawberry blended with milk and pearls</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R58</span>
-    <button class="add-btn" onclick="CART.add('Strawberry Boba','R58','Fresh strawberry blended with milk and p')" aria-label="Add Strawberry Boba">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Thai Tea Boba</span><span class="mi-desc">Classic Thai tea with condensed milk and pearls</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R55</span>
-    <button class="add-btn" onclick="CART.add('Thai Tea Boba','R55','Classic Thai tea with condensed milk and')" aria-label="Add Thai Tea Boba">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Mango Boba</span><span class="mi-desc">Sweet mango puree with milk and pearls</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R57</span>
-    <button class="add-btn" onclick="CART.add('Mango Boba','R57','Sweet mango puree with milk and pearls')" aria-label="Add Mango Boba">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Honeydew Boba</span><span class="mi-desc">Refreshing honeydew melon with milk and pearls</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R56</span>
-    <button class="add-btn" onclick="CART.add('Honeydew Boba','R56','Refreshing honeydew melon with milk and ')" aria-label="Add Honeydew Boba">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Morda Signature Boba</span><span class="mi-desc">Coffee milk tea with espresso shot and pearls</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R65</span>
-    <button class="add-btn" onclick="CART.add('Morda Signature Boba','R65','Coffee milk tea with espresso shot and p')" aria-label="Add Morda Signature Boba">+</button>
-  </div>
-</div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Classic Milk Tea Boba</span><span class="mi-desc">Creamy black tea with real tapioca pearls</span></div><div class="mi-right"><span class="mi-price">R55</span><button class="add-btn" onclick="CART.add('Classic Milk Tea Boba','R55','Creamy black tea with real tapioca pearl')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Taro Boba</span><span class="mi-desc">Smooth purple taro with milk and tapioca pearls</span></div><div class="mi-right"><span class="mi-price">R58</span><button class="add-btn" onclick="CART.add('Taro Boba','R58','Smooth purple taro with milk and tapioca')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Brown Sugar Boba Latte</span><span class="mi-desc">Rich brown sugar syrup, silky milk and chewy pearls</span></div><div class="mi-right"><span class="mi-price">R62</span><button class="add-btn" onclick="CART.add('Brown Sugar Boba Latte','R62','Rich brown sugar syrup, silky milk and c')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Matcha Boba</span><span class="mi-desc">Premium ceremonial matcha with milk and pearls</span></div><div class="mi-right"><span class="mi-price">R60</span><button class="add-btn" onclick="CART.add('Matcha Boba','R60','Premium ceremonial matcha with milk and ')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Strawberry Boba</span><span class="mi-desc">Fresh strawberry blended with milk and pearls</span></div><div class="mi-right"><span class="mi-price">R58</span><button class="add-btn" onclick="CART.add('Strawberry Boba','R58','Fresh strawberry blended with milk and p')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Thai Tea Boba</span><span class="mi-desc">Classic Thai tea with condensed milk and pearls</span></div><div class="mi-right"><span class="mi-price">R55</span><button class="add-btn" onclick="CART.add('Thai Tea Boba','R55','Classic Thai tea with condensed milk and')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Mango Boba</span><span class="mi-desc">Sweet mango puree with milk and pearls</span></div><div class="mi-right"><span class="mi-price">R57</span><button class="add-btn" onclick="CART.add('Mango Boba','R57','Sweet mango puree with milk and pearls')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Honeydew Boba</span><span class="mi-desc">Refreshing honeydew melon with milk and pearls</span></div><div class="mi-right"><span class="mi-price">R56</span><button class="add-btn" onclick="CART.add('Honeydew Boba','R56','Refreshing honeydew melon with milk and ')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Morda Signature Boba</span><span class="mi-desc">Coffee milk tea with espresso shot and pearls</span></div><div class="mi-right"><span class="mi-price">R65</span><button class="add-btn" onclick="CART.add('Morda Signature Boba','R65','Coffee milk tea with espresso shot and p')">+</button></div></div>
     </div></div>
     <div class="tab-panel" id="tab-smoothies"><p class="tab-cat-label">Cold Smoothies</p><div class="menu-items">
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Berry Sunrise</span><span class="mi-desc">Mixed berries, banana, yoghurt, and honey</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R62</span>
-    <button class="add-btn" onclick="CART.add('Berry Sunrise','R62','Mixed berries, banana, yoghurt, and hone')" aria-label="Add Berry Sunrise">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Tropical Glow</span><span class="mi-desc">Mango, pineapple, banana, and orange juice</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R60</span>
-    <button class="add-btn" onclick="CART.add('Tropical Glow','R60','Mango, pineapple, banana, and orange jui')" aria-label="Add Tropical Glow">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Green Boost</span><span class="mi-desc">Spinach, apple, banana, cucumber, and lemon</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R58</span>
-    <button class="add-btn" onclick="CART.add('Green Boost','R58','Spinach, apple, banana, cucumber, and le')" aria-label="Add Green Boost">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Peanut Butter Power</span><span class="mi-desc">Banana, peanut butter, milk, and oats</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R65</span>
-    <button class="add-btn" onclick="CART.add('Peanut Butter Power','R65','Banana, peanut butter, milk, and oats')" aria-label="Add Peanut Butter Power">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Strawberry Cream</span><span class="mi-desc">Strawberry, yoghurt, honey, and vanilla</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R60</span>
-    <button class="add-btn" onclick="CART.add('Strawberry Cream','R60','Strawberry, yoghurt, honey, and vanilla')" aria-label="Add Strawberry Cream">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Morda Energy Smoothie</span><span class="mi-desc">Banana, oats, espresso shot, and peanut butter</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R68</span>
-    <button class="add-btn" onclick="CART.add('Morda Energy Smoothie','R68','Banana, oats, espresso shot, and peanut ')" aria-label="Add Morda Energy Smoothie">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Mango Madness</span><span class="mi-desc">Mango, passion fruit, and coconut water</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R62</span>
-    <button class="add-btn" onclick="CART.add('Mango Madness','R62','Mango, passion fruit, and coconut water')" aria-label="Add Mango Madness">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Pineapple Bliss</span><span class="mi-desc">Pineapple, ginger, lemon, and fresh mint</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R58</span>
-    <button class="add-btn" onclick="CART.add('Pineapple Bliss','R58','Pineapple, ginger, lemon, and fresh mint')" aria-label="Add Pineapple Bliss">+</button>
-  </div>
-</div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Berry Sunrise</span><span class="mi-desc">Mixed berries, banana, yoghurt, and honey</span></div><div class="mi-right"><span class="mi-price">R62</span><button class="add-btn" onclick="CART.add('Berry Sunrise','R62','Mixed berries, banana, yoghurt, and hone')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Tropical Glow</span><span class="mi-desc">Mango, pineapple, banana, and orange juice</span></div><div class="mi-right"><span class="mi-price">R60</span><button class="add-btn" onclick="CART.add('Tropical Glow','R60','Mango, pineapple, banana, and orange jui')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Green Boost</span><span class="mi-desc">Spinach, apple, banana, cucumber, and lemon</span></div><div class="mi-right"><span class="mi-price">R58</span><button class="add-btn" onclick="CART.add('Green Boost','R58','Spinach, apple, banana, cucumber, and le')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Peanut Butter Power</span><span class="mi-desc">Banana, peanut butter, milk, and oats</span></div><div class="mi-right"><span class="mi-price">R65</span><button class="add-btn" onclick="CART.add('Peanut Butter Power','R65','Banana, peanut butter, milk, and oats')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Strawberry Cream</span><span class="mi-desc">Strawberry, yoghurt, honey, and vanilla</span></div><div class="mi-right"><span class="mi-price">R60</span><button class="add-btn" onclick="CART.add('Strawberry Cream','R60','Strawberry, yoghurt, honey, and vanilla')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Morda Energy Smoothie</span><span class="mi-desc">Banana, oats, espresso shot, and peanut butter</span></div><div class="mi-right"><span class="mi-price">R68</span><button class="add-btn" onclick="CART.add('Morda Energy Smoothie','R68','Banana, oats, espresso shot, and peanut ')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Mango Madness</span><span class="mi-desc">Mango, passion fruit, and coconut water</span></div><div class="mi-right"><span class="mi-price">R62</span><button class="add-btn" onclick="CART.add('Mango Madness','R62','Mango, passion fruit, and coconut water')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Pineapple Bliss</span><span class="mi-desc">Pineapple, ginger, lemon, and fresh mint</span></div><div class="mi-right"><span class="mi-price">R58</span><button class="add-btn" onclick="CART.add('Pineapple Bliss','R58','Pineapple, ginger, lemon, and fresh mint')">+</button></div></div>
     </div></div>
-    <div class="tab-panel" id="tab-toast"><p class="tab-cat-label">Toast &amp; Open Sandwiches</p><div class="menu-items">
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Classic Avo Toast</span><span class="mi-desc">Toasted sourdough, smashed avo, chilli flakes and lemon</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R78</span>
-    <button class="add-btn" onclick="CART.add('Classic Avo Toast','R78','Toasted sourdough, smashed avo, chilli f')" aria-label="Add Classic Avo Toast">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Smashed Avo & Egg Toast</span><span class="mi-desc">Sourdough, smashed avo, poached egg, feta and chilli</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R85</span>
-    <button class="add-btn" onclick="CART.add('Smashed Avo & Egg Toast','R85','Sourdough, smashed avo, poached egg, fet')" aria-label="Add Smashed Avo & Egg Toast">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">PB Banana Toast</span><span class="mi-desc">Thick-cut toast, peanut butter, banana, honey and chia</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R55</span>
-    <button class="add-btn" onclick="CART.add('PB Banana Toast','R55','Thick-cut toast, peanut butter, banana, ')" aria-label="Add PB Banana Toast">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Feta & Tomato Toast</span><span class="mi-desc">Toasted ciabatta, tomato, crumbled feta and fresh basil</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R70</span>
-    <button class="add-btn" onclick="CART.add('Feta & Tomato Toast','R70','Toasted ciabatta, tomato, crumbled feta ')" aria-label="Add Feta & Tomato Toast">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Honey Ricotta Toast</span><span class="mi-desc">Toasted bread, whipped ricotta, honey and walnuts</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R68</span>
-    <button class="add-btn" onclick="CART.add('Honey Ricotta Toast','R68','Toasted bread, whipped ricotta, honey an')" aria-label="Add Honey Ricotta Toast">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Salmon Toast</span><span class="mi-desc">Toasted rye, cream cheese, smoked salmon and capers</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R95</span>
-    <button class="add-btn" onclick="CART.add('Salmon Toast','R95','Toasted rye, cream cheese, smoked salmon')" aria-label="Add Salmon Toast">+</button>
-  </div>
-</div>
+    <div class="tab-panel" id="tab-toast"><p class="tab-cat-label">Toast and Open Sandwiches</p><div class="menu-items">
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Classic Avo Toast</span><span class="mi-desc">Toasted sourdough, smashed avo, chilli flakes and lemon</span></div><div class="mi-right"><span class="mi-price">R78</span><button class="add-btn" onclick="CART.add('Classic Avo Toast','R78','Toasted sourdough, smashed avo, chilli f')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Smashed Avo and Egg Toast</span><span class="mi-desc">Sourdough, smashed avo, poached egg, feta and chilli</span></div><div class="mi-right"><span class="mi-price">R85</span><button class="add-btn" onclick="CART.add('Smashed Avo and Egg Toast','R85','Sourdough, smashed avo, poached egg, fet')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">PB Banana Toast</span><span class="mi-desc">Thick-cut toast, peanut butter, banana, honey and chia</span></div><div class="mi-right"><span class="mi-price">R55</span><button class="add-btn" onclick="CART.add('PB Banana Toast','R55','Thick-cut toast, peanut butter, banana, ')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Feta and Tomato Toast</span><span class="mi-desc">Toasted ciabatta, tomato, crumbled feta and fresh basil</span></div><div class="mi-right"><span class="mi-price">R70</span><button class="add-btn" onclick="CART.add('Feta and Tomato Toast','R70','Toasted ciabatta, tomato, crumbled feta ')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Honey Ricotta Toast</span><span class="mi-desc">Toasted bread, whipped ricotta, honey and walnuts</span></div><div class="mi-right"><span class="mi-price">R68</span><button class="add-btn" onclick="CART.add('Honey Ricotta Toast','R68','Toasted bread, whipped ricotta, honey an')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Salmon Toast</span><span class="mi-desc">Toasted rye, cream cheese, smoked salmon and capers</span></div><div class="mi-right"><span class="mi-price">R95</span><button class="add-btn" onclick="CART.add('Salmon Toast','R95','Toasted rye, cream cheese, smoked salmon')">+</button></div></div>
     </div></div>
     <div class="tab-panel" id="tab-breakfast"><p class="tab-cat-label">Breakfast Plates</p><div class="menu-items">
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Morda Breakfast Plate</span><span class="mi-desc">Eggs, toast, beef sausage, grilled tomato and mushrooms</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R95</span>
-    <button class="add-btn" onclick="CART.add('Morda Breakfast Plate','R95','Eggs, toast, beef sausage, grilled tomat')" aria-label="Add Morda Breakfast Plate">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Breakfast Croissant</span><span class="mi-desc">Buttery croissant with egg, cheese and bacon</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R82</span>
-    <button class="add-btn" onclick="CART.add('Breakfast Croissant','R82','Buttery croissant with egg, cheese and b')" aria-label="Add Breakfast Croissant">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">French Toast Stack</span><span class="mi-desc">Cinnamon toast with berries, maple syrup and cream</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R88</span>
-    <button class="add-btn" onclick="CART.add('French Toast Stack','R88','Cinnamon toast with berries, maple syrup')" aria-label="Add French Toast Stack">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Omelette Deluxe</span><span class="mi-desc">Three-egg omelette with cheese, mixed peppers and mushrooms</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R85</span>
-    <button class="add-btn" onclick="CART.add('Omelette Deluxe','R85','Three-egg omelette with cheese, mixed pe')" aria-label="Add Omelette Deluxe">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Granola Bowl</span><span class="mi-desc">Greek yoghurt, honey, mixed fruit and toasted granola</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R70</span>
-    <button class="add-btn" onclick="CART.add('Granola Bowl','R70','Greek yoghurt, honey, mixed fruit and to')" aria-label="Add Granola Bowl">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Eggs Benedict</span><span class="mi-desc">Poached eggs and hollandaise on a toasted English muffin</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R92</span>
-    <button class="add-btn" onclick="CART.add('Eggs Benedict','R92','Poached eggs and hollandaise on a toaste')" aria-label="Add Eggs Benedict">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Pancake Stack</span><span class="mi-desc">Fluffy buttermilk pancakes with maple syrup and berries</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R80</span>
-    <button class="add-btn" onclick="CART.add('Pancake Stack','R80','Fluffy buttermilk pancakes with maple sy')" aria-label="Add Pancake Stack">+</button>
-  </div>
-</div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Morda Breakfast Plate</span><span class="mi-desc">Eggs, toast, beef sausage, grilled tomato and mushrooms</span></div><div class="mi-right"><span class="mi-price">R95</span><button class="add-btn" onclick="CART.add('Morda Breakfast Plate','R95','Eggs, toast, beef sausage, grilled tomat')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Breakfast Croissant</span><span class="mi-desc">Buttery croissant with egg, cheese and bacon</span></div><div class="mi-right"><span class="mi-price">R82</span><button class="add-btn" onclick="CART.add('Breakfast Croissant','R82','Buttery croissant with egg, cheese and b')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">French Toast Stack</span><span class="mi-desc">Cinnamon toast with berries, maple syrup and cream</span></div><div class="mi-right"><span class="mi-price">R88</span><button class="add-btn" onclick="CART.add('French Toast Stack','R88','Cinnamon toast with berries, maple syrup')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Omelette Deluxe</span><span class="mi-desc">Three-egg omelette with cheese, mixed peppers and mushrooms</span></div><div class="mi-right"><span class="mi-price">R85</span><button class="add-btn" onclick="CART.add('Omelette Deluxe','R85','Three-egg omelette with cheese, mixed pe')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Granola Bowl</span><span class="mi-desc">Greek yoghurt, honey, mixed fruit and toasted granola</span></div><div class="mi-right"><span class="mi-price">R70</span><button class="add-btn" onclick="CART.add('Granola Bowl','R70','Greek yoghurt, honey, mixed fruit and to')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Eggs Benedict</span><span class="mi-desc">Poached eggs and hollandaise on a toasted English muffin</span></div><div class="mi-right"><span class="mi-price">R92</span><button class="add-btn" onclick="CART.add('Eggs Benedict','R92','Poached eggs and hollandaise on a toaste')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Pancake Stack</span><span class="mi-desc">Fluffy buttermilk pancakes with maple syrup and berries</span></div><div class="mi-right"><span class="mi-price">R80</span><button class="add-btn" onclick="CART.add('Pancake Stack','R80','Fluffy buttermilk pancakes with maple sy')">+</button></div></div>
     </div></div>
-    <div class="tab-panel" id="tab-pastries"><p class="tab-cat-label">Fresh Pastries &amp; Cakes</p><div class="menu-items">
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Butter Croissant</span><span class="mi-desc">Freshly baked, golden and delightfully flaky</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R32</span>
-    <button class="add-btn" onclick="CART.add('Butter Croissant','R32','Freshly baked, golden and delightfully f')" aria-label="Add Butter Croissant">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Chocolate Croissant</span><span class="mi-desc">Buttery pastry filled with rich dark Belgian chocolate</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R38</span>
-    <button class="add-btn" onclick="CART.add('Chocolate Croissant','R38','Buttery pastry filled with rich dark Bel')" aria-label="Add Chocolate Croissant">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Cinnamon Roll</span><span class="mi-desc">Soft warm roll with sweet cinnamon sugar glaze</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R42</span>
-    <button class="add-btn" onclick="CART.add('Cinnamon Roll','R42','Soft warm roll with sweet cinnamon sugar')" aria-label="Add Cinnamon Roll">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Blueberry Muffin</span><span class="mi-desc">Fresh blueberries baked into a soft vanilla crumb</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R35</span>
-    <button class="add-btn" onclick="CART.add('Blueberry Muffin','R35','Fresh blueberries baked into a soft vani')" aria-label="Add Blueberry Muffin">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Almond Danish</span><span class="mi-desc">Buttery layered pastry with almond cream filling</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R45</span>
-    <button class="add-btn" onclick="CART.add('Almond Danish','R45','Buttery layered pastry with almond cream')" aria-label="Add Almond Danish">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Morda Brownie</span><span class="mi-desc">Dark chocolate brownie with espresso notes and sea salt</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R40</span>
-    <button class="add-btn" onclick="CART.add('Morda Brownie','R40','Dark chocolate brownie with espresso not')" aria-label="Add Morda Brownie">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Lemon Drizzle Cake</span><span class="mi-desc">Zesty lemon sponge with a sweet lemon glaze</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R42</span>
-    <button class="add-btn" onclick="CART.add('Lemon Drizzle Cake','R42','Zesty lemon sponge with a sweet lemon gl')" aria-label="Add Lemon Drizzle Cake">+</button>
-  </div>
-</div>
+    <div class="tab-panel" id="tab-pastries"><p class="tab-cat-label">Fresh Pastries and Cakes</p><div class="menu-items">
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Butter Croissant</span><span class="mi-desc">Freshly baked, golden and delightfully flaky</span></div><div class="mi-right"><span class="mi-price">R32</span><button class="add-btn" onclick="CART.add('Butter Croissant','R32','Freshly baked, golden and delightfully f')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Chocolate Croissant</span><span class="mi-desc">Buttery pastry filled with rich dark Belgian chocolate</span></div><div class="mi-right"><span class="mi-price">R38</span><button class="add-btn" onclick="CART.add('Chocolate Croissant','R38','Buttery pastry filled with rich dark Bel')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Cinnamon Roll</span><span class="mi-desc">Soft warm roll with sweet cinnamon sugar glaze</span></div><div class="mi-right"><span class="mi-price">R42</span><button class="add-btn" onclick="CART.add('Cinnamon Roll','R42','Soft warm roll with sweet cinnamon sugar')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Blueberry Muffin</span><span class="mi-desc">Fresh blueberries baked into a soft vanilla crumb</span></div><div class="mi-right"><span class="mi-price">R35</span><button class="add-btn" onclick="CART.add('Blueberry Muffin','R35','Fresh blueberries baked into a soft vani')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Almond Danish</span><span class="mi-desc">Buttery layered pastry with almond cream filling</span></div><div class="mi-right"><span class="mi-price">R45</span><button class="add-btn" onclick="CART.add('Almond Danish','R45','Buttery layered pastry with almond cream')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Morda Brownie</span><span class="mi-desc">Dark chocolate brownie with espresso notes and sea salt</span></div><div class="mi-right"><span class="mi-price">R40</span><button class="add-btn" onclick="CART.add('Morda Brownie','R40','Dark chocolate brownie with espresso not')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Lemon Drizzle Cake</span><span class="mi-desc">Zesty lemon sponge with a sweet lemon glaze</span></div><div class="mi-right"><span class="mi-price">R42</span><button class="add-btn" onclick="CART.add('Lemon Drizzle Cake','R42','Zesty lemon sponge with a sweet lemon gl')">+</button></div></div>
     </div></div>
     <div class="tab-panel" id="tab-lightmeals"><p class="tab-cat-label">Light Meals</p><div class="menu-items">
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Chicken Mayo Toastie</span><span class="mi-desc">Toasted sandwich with creamy chicken mayo filling</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R72</span>
-    <button class="add-btn" onclick="CART.add('Chicken Mayo Toastie','R72','Toasted sandwich with creamy chicken may')" aria-label="Add Chicken Mayo Toastie">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Caprese Panini</span><span class="mi-desc">Tomato, mozzarella and basil pesto on toasted ciabatta</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R75</span>
-    <button class="add-btn" onclick="CART.add('Caprese Panini','R75','Tomato, mozzarella and basil pesto on to')" aria-label="Add Caprese Panini">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Beef Bagel</span><span class="mi-desc">Toasted bagel with seasoned beef strips, cheese and sauce</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R90</span>
-    <button class="add-btn" onclick="CART.add('Beef Bagel','R90','Toasted bagel with seasoned beef strips,')" aria-label="Add Beef Bagel">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Chicken Wrap</span><span class="mi-desc">Grilled chicken, lettuce, tomato and creamy sauce</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R88</span>
-    <button class="add-btn" onclick="CART.add('Chicken Wrap','R88','Grilled chicken, lettuce, tomato and cre')" aria-label="Add Chicken Wrap">+</button>
-  </div>
-</div>
-      <div class="menu-item">
-  <div class="mi-info"><span class="mi-name">Café Salad Bowl</span><span class="mi-desc">Greens, avo, feta, cherry tomatoes and house dressing</span></div>
-  <div class="mi-right">
-    <span class="mi-price">R82</span>
-    <button class="add-btn" onclick="CART.add('Café Salad Bowl','R82','Greens, avo, feta, cherry tomatoes and h')" aria-label="Add Café Salad Bowl">+</button>
-  </div>
-</div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Chicken Mayo Toastie</span><span class="mi-desc">Toasted sandwich with creamy chicken mayo filling</span></div><div class="mi-right"><span class="mi-price">R72</span><button class="add-btn" onclick="CART.add('Chicken Mayo Toastie','R72','Toasted sandwich with creamy chicken may')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Caprese Panini</span><span class="mi-desc">Tomato, mozzarella and basil pesto on toasted ciabatta</span></div><div class="mi-right"><span class="mi-price">R75</span><button class="add-btn" onclick="CART.add('Caprese Panini','R75','Tomato, mozzarella and basil pesto on to')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Beef Bagel</span><span class="mi-desc">Toasted bagel with seasoned beef strips, cheese and sauce</span></div><div class="mi-right"><span class="mi-price">R90</span><button class="add-btn" onclick="CART.add('Beef Bagel','R90','Toasted bagel with seasoned beef strips,')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Chicken Wrap</span><span class="mi-desc">Grilled chicken, lettuce, tomato and creamy sauce</span></div><div class="mi-right"><span class="mi-price">R88</span><button class="add-btn" onclick="CART.add('Chicken Wrap','R88','Grilled chicken, lettuce, tomato and cre')">+</button></div></div>
+      <div class="menu-item"><div class="mi-info"><span class="mi-name">Cafe Salad Bowl</span><span class="mi-desc">Greens, avo, feta, cherry tomatoes and house dressing</span></div><div class="mi-right"><span class="mi-price">R82</span><button class="add-btn" onclick="CART.add('Cafe Salad Bowl','R82','Greens, avo, feta, cherry tomatoes and h')">+</button></div></div>
     </div></div>
   </div>
 </section>
-<footer class="footer">
-  <div class="container footer-inner">
-    <div class="footer-brand">
-      <img class="site-logo footer-logo" src="" alt="Morda Café"/>
-      <p>A warm modern café serving craft coffee, boba, smoothies, fresh breakfasts, pastries &amp; light meals in the heart of Sandton.</p>
-      <div class="social-links"><a href="https://instagram.com/mordacafe" target="_blank" aria-label="Instagram">📸</a><a href="https://facebook.com/mordacafe" target="_blank" aria-label="Facebook">👍</a><a href="https://tiktok.com/@mordacafe" target="_blank" aria-label="TikTok">🎵</a></div>
-    </div>
-    <div class="footer-links"><h4>Navigate</h4><ul>
-      <li><a href="index.html" data-nav>Home</a></li><li><a href="about.html" data-nav>About</a></li>
-      <li><a href="menu.html" data-nav>Menu</a></li><li><a href="gallery.html" data-nav>Gallery</a></li>
-      <li><a href="ratings.html" data-nav>Ratings</a></li><li><a href="contact.html" data-nav>Contact</a></li></ul></div>
-    <div class="footer-links"><h4>Menu</h4><ul>
-      <li><a href="menu.html" data-nav>Coffee</a></li><li><a href="menu.html" data-nav>Boba Tea</a></li>
-      <li><a href="menu.html" data-nav>Smoothies</a></li><li><a href="menu.html" data-nav>Toast</a></li>
-      <li><a href="menu.html" data-nav>Breakfast</a></li><li><a href="menu.html" data-nav>Pastries</a></li></ul></div>
-    <div class="footer-links"><h4>Visit Us</h4><ul>
-      <li>Shop 12, The MARC</li><li>129 Rivonia Rd, Sandton</li>
-      <li><a href="tel:+27115678901" style="color:inherit">+27 11 567 8901</a></li>
-      <li><a href="mailto:hello@mordacafe.co.za" style="color:inherit">hello@mordacafe.co.za</a></li></ul></div>
-  </div>
-  <div class="footer-bottom"><p>© 2026 Morda Café · All rights reserved · Powered by <strong style="color:var(--gold)">Maphake Automation</strong> ⚡</p></div>
-</footer>
+<footer class="footer"><div class="container footer-inner">
+  <div class="footer-brand"><img class="footer-logo" src="data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABh" alt="Morda Café"/><p>A warm modern café serving craft coffee, boba, smoothies, fresh breakfasts, pastries &amp; light meals in the heart of Sandton.</p><div class="social-links"><a href="https://instagram.com/mordacafe" target="_blank">📸</a><a href="https://facebook.com/mordacafe" target="_blank">👍</a><a href="https://tiktok.com/@mordacafe" target="_blank">🎵</a></div></div>
+  <div class="footer-links"><h4>Navigate</h4><ul><li><a href="index.html" data-nav>Home</a></li><li><a href="about.html" data-nav>About</a></li><li><a href="menu.html" data-nav>Menu</a></li><li><a href="gallery.html" data-nav>Gallery</a></li><li><a href="ratings.html" data-nav>Ratings</a></li><li><a href="contact.html" data-nav>Contact</a></li></ul></div>
+  <div class="footer-links"><h4>Menu</h4><ul><li><a href="menu.html" data-nav>Coffee</a></li><li><a href="menu.html" data-nav>Boba Tea</a></li><li><a href="menu.html" data-nav>Smoothies</a></li><li><a href="menu.html" data-nav>Toast</a></li><li><a href="menu.html" data-nav>Breakfast</a></li><li><a href="menu.html" data-nav>Pastries</a></li></ul></div>
+  <div class="footer-links"><h4>Visit Us</h4><ul><li>Shop 12, The MARC</li><li>129 Rivonia Rd, Sandton</li><li><a href="tel:+27115678901" style="color:inherit">+27 11 567 8901</a></li><li><a href="mailto:hello@mordacafe.co.za" style="color:inherit">hello@mordacafe.co.za</a></li></ul></div>
+</div><div class="footer-bottom"><p>© 2026 Morda Café · All rights reserved · Powered by <strong style="color:var(--gold)">Maphake Automation</strong> ⚡</p></div></footer>
 </div>
 
-<button class="cart-fab" id="cartBtn" aria-label="View Cart">
-  🛒 <span class="cart-badge" id="cartBadge" style="display:none">0</span>
-</button>
+<!-- CART FAB -->
+<button class="cart-fab" id="cartBtn">🛒 <span class="cart-badge" id="cartBadge" style="display:none">0</span></button>
+
+<!-- SLIDE-IN CART -->
 <div class="cart-overlay" id="cartOverlay"></div>
 <div class="cart-panel" id="cartPanel">
-  <div class="cart-header">
-    <h3>Your Order</h3>
-    <button id="cartClose" class="cart-close-btn">✕</button>
-  </div>
-  <div class="cart-body" id="cartBody">
-    <div class="cart-empty"><span>🛒</span><p>Your cart is empty</p><small>Browse the menu and add your favourites</small></div>
-  </div>
+  <div class="cart-header"><div class="cart-title"><span>🛒</span><h3>Your Order</h3></div><button id="cartClose" class="cart-close-btn">✕</button></div>
+  <div class="cart-body" id="cartBody"><div class="cart-empty"><span>🛒</span><p>Your cart is empty</p><small>Browse the menu above and tap + to add items</small></div></div>
   <div class="cart-footer">
-    <div class="cart-total-row"><span>Total</span><strong id="cartTotal">R0.00</strong></div>
-    <button class="btn btn-gold" id="placeOrderBtn" style="width:100%;margin-top:12px">Place Order →</button>
+    <div class="cart-total-row"><span>Subtotal</span><strong id="cartTotal">R0.00</strong></div>
+    <button class="btn btn-gold" id="placeOrderBtn" style="width:100%;margin-top:14px;padding:15px;font-size:.95rem">Proceed to Order →</button>
   </div>
 </div>
-<div class="order-modal" id="orderModal">
-  <div class="order-modal-inner">
-    <button class="modal-close" id="modalClose">✕</button>
-    <h2>🛵 How Would You Like to Order?</h2>
-    <p>Choose your preferred ordering method below.</p>
-    <div id="orderSummary" class="order-summary"></div>
-    <div class="order-total-row"><span>Order Total</span><strong id="orderTotal">R0.00</strong></div>
-    <div class="order-options">
-      <button class="order-opt uber" id="uberEatsBtn">
-        <span class="opt-icon">🛵</span>
-        <div><strong>Uber Eats</strong><small>Order for delivery</small></div>
-      </button>
-      <button class="order-opt whatsapp" id="whatsappBtn">
-        <span class="opt-icon">💬</span>
-        <div><strong>WhatsApp</strong><small>Message your order</small></div>
-      </button>
+
+<!-- FULL ORDER FLOW OVERLAY -->
+<div class="order-flow-overlay" id="orderFlowOverlay">
+  <div class="order-flow-box" id="orderFlowBox">
+
+    <!-- STEP 1: Choose method -->
+    <div class="flow-step" id="step1">
+      <button class="flow-close" id="flowClose">✕</button>
+      <div class="flow-logo">☕</div>
+      <h2>How would you like your order?</h2>
+      <p>Choose delivery to your door, or collect in-store.</p>
+      <div class="flow-method-grid">
+        <button class="flow-method-btn" id="chooseDelivery">
+          <span class="method-icon">🛵</span>
+          <strong>Delivery</strong>
+          <small>Delivered to your door<br/>Est. 30–45 min</small>
+        </button>
+        <button class="flow-method-btn" id="chooseCollection">
+          <span class="method-icon">🏃</span>
+          <strong>Collection</strong>
+          <small>Ready in-store<br/>Est. 10–15 min</small>
+        </button>
+      </div>
+      <div class="flow-order-preview" id="step1Preview"></div>
+      <p class="flow-contact">Questions? <a href="tel:+27115678901">+27 11 567 8901</a></p>
     </div>
-    <p style="font-size:.72rem;color:var(--mocha);margin-top:12px;text-align:center">Or call us: +27 11 567 8901</p>
+
+    <!-- STEP 2a: Delivery details -->
+    <div class="flow-step" id="step2delivery" style="display:none">
+      <button class="flow-back" id="backFromDelivery">← Back</button>
+      <div class="flow-logo">🛵</div>
+      <h2>Delivery Details</h2>
+      <p>We'll deliver your order straight to you.</p>
+      <div class="flow-form">
+        <div class="flow-field"><label>Your Name</label><input type="text" id="dName" placeholder="e.g. Thabo Nkosi" autocomplete="name"/></div>
+        <div class="flow-field"><label>Phone Number</label><input type="tel" id="dPhone" placeholder="e.g. 082 123 4567" autocomplete="tel"/></div>
+        <div class="flow-field"><label>Delivery Address</label><input type="text" id="dAddress" placeholder="e.g. 14 Rivonia Rd, Sandton"/></div>
+        <div class="flow-field"><label>Special Instructions <span style="opacity:.5">(optional)</span></label><input type="text" id="dNotes" placeholder="e.g. No onions, extra sauce"/></div>
+      </div>
+      <div class="flow-order-preview" id="step2dPreview"></div>
+      <button class="btn btn-gold" id="confirmDelivery" style="width:100%;margin-top:16px;padding:15px">Confirm Delivery Order →</button>
+    </div>
+
+    <!-- STEP 2b: Collection details -->
+    <div class="flow-step" id="step2collection" style="display:none">
+      <button class="flow-back" id="backFromCollection">← Back</button>
+      <div class="flow-logo">🏃</div>
+      <h2>Collection Details</h2>
+      <p>We'll have your order ready at the counter.</p>
+      <div class="flow-info-box">📍 Shop 12, The MARC Lifestyle Centre<br/>129 Rivonia Road, Sandton</div>
+      <div class="flow-form">
+        <div class="flow-field"><label>Your Name</label><input type="text" id="cName" placeholder="e.g. Thabo Nkosi" autocomplete="name"/></div>
+        <div class="flow-field"><label>Phone Number</label><input type="tel" id="cPhone" placeholder="e.g. 082 123 4567" autocomplete="tel"/></div>
+        <div class="flow-field"><label>Special Instructions <span style="opacity:.5">(optional)</span></label><input type="text" id="cNotes" placeholder="e.g. No sugar in coffee"/></div>
+      </div>
+      <div class="flow-order-preview" id="step2cPreview"></div>
+      <button class="btn btn-gold" id="confirmCollection" style="width:100%;margin-top:16px;padding:15px">Confirm Collection Order →</button>
+    </div>
+
+    <!-- STEP 3: Processing -->
+    <div class="flow-step" id="step3processing" style="display:none">
+      <div class="processing-anim">
+        <div class="proc-cup">☕</div>
+        <div class="proc-dots"><span></span><span></span><span></span></div>
+      </div>
+      <h2>Placing your order...</h2>
+      <p>Just a moment while we confirm everything with the kitchen.</p>
+    </div>
+
+    <!-- STEP 4: Confirmation -->
+    <div class="flow-step" id="step4confirm" style="display:none">
+      <div class="confirm-check">✓</div>
+      <h2 id="confirmTitle">Order Confirmed!</h2>
+      <div class="order-ref-badge" id="confirmRef"></div>
+      <p id="confirmMsg"></p>
+      <div class="confirm-eta" id="confirmEta"></div>
+      <div class="confirm-items" id="confirmItems"></div>
+      <div class="confirm-total" id="confirmTotal"></div>
+      <p class="confirm-note">Need help with your order? Call us on <a href="tel:+27115678901">+27 11 567 8901</a></p>
+      <button class="btn btn-gold" id="doneBtn" style="width:100%;margin-top:20px;padding:14px">Done ✓</button>
+    </div>
+
   </div>
 </div>
 <div class="chat-widget" id="chatWidget">
-  <div class="chat-avatar-bubble" id="chatToggle" aria-label="Chat with Morda AI">
-    <div class="barista-avatar"><svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="38" fill="#1F0404" stroke="#C28A45" stroke-width="2.5"/><circle cx="40" cy="33" r="17" fill="#E8B98B"/><rect x="25" y="12" width="30" height="8" rx="4" fill="#2B0B08"/><rect x="23" y="8" width="34" height="7" rx="3.5" fill="#1F0404"/><ellipse cx="33" cy="31" rx="3" ry="3.5" fill="#1F0404" class="eye-left"/><ellipse cx="47" cy="31" rx="3" ry="3.5" fill="#1F0404" class="eye-right"/><circle cx="34" cy="30" r="1" fill="#fff" opacity="0.8"/><circle cx="48" cy="30" r="1" fill="#fff" opacity="0.8"/><path d="M32 39 Q40 46 48 39" stroke="#8B4513" stroke-width="2" fill="none" stroke-linecap="round"/><ellipse cx="28" cy="37" rx="5" ry="3" fill="#FF9B9B" opacity="0.35"/><ellipse cx="52" cy="37" rx="5" ry="3" fill="#FF9B9B" opacity="0.35"/><path d="M18 53 Q40 47 62 53 L64 80 H16 Z" fill="#1F0404"/><path d="M24 55 Q40 50 56 55 L54 80 H26 Z" fill="#F7E9D2"/><rect x="57" y="55" width="13" height="11" rx="2.5" fill="#C28A45"/><path d="M70 59 Q74 59 74 63 Q74 67 70 67" stroke="#C28A45" stroke-width="2" fill="none" stroke-linecap="round"/><rect x="59" y="53" width="9" height="3" rx="1.5" fill="#E8D3B0"/><path d="M61 52 Q63 47 61 43" stroke="rgba(247,233,210,0.7)" stroke-width="1.5" fill="none" stroke-linecap="round" class="steam-path"/><path d="M65 51 Q67 46 65 42" stroke="rgba(247,233,210,0.7)" stroke-width="1.5" fill="none" stroke-linecap="round" class="steam-path" style="animation-delay:.4s"/></svg></div>
-    <div class="avatar-pulse"></div>
-  </div>
+  <div class="chat-avatar-bubble" id="chatToggle"><div class="barista-avatar"><svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="38" fill="#1F0404" stroke="#C28A45" stroke-width="2.5"/><circle cx="40" cy="33" r="17" fill="#E8B98B"/><rect x="25" y="12" width="30" height="8" rx="4" fill="#2B0B08"/><ellipse cx="33" cy="31" rx="3" ry="3.5" fill="#1F0404" class="eye-left"/><ellipse cx="47" cy="31" rx="3" ry="3.5" fill="#1F0404" class="eye-right"/><circle cx="34" cy="30" r="1" fill="#fff" opacity="0.8"/><circle cx="48" cy="30" r="1" fill="#fff" opacity="0.8"/><path d="M32 39 Q40 46 48 39" stroke="#8B4513" stroke-width="2" fill="none" stroke-linecap="round"/><ellipse cx="28" cy="37" rx="5" ry="3" fill="#FF9B9B" opacity="0.35"/><ellipse cx="52" cy="37" rx="5" ry="3" fill="#FF9B9B" opacity="0.35"/><path d="M18 53 Q40 47 62 53 L64 80 H16 Z" fill="#1F0404"/><path d="M24 55 Q40 50 56 55 L54 80 H26 Z" fill="#F7E9D2"/><rect x="57" y="55" width="13" height="11" rx="2.5" fill="#C28A45"/><path d="M70 59 Q74 59 74 63 Q74 67 70 67" stroke="#C28A45" stroke-width="2" fill="none"/><rect x="59" y="53" width="9" height="3" rx="1.5" fill="#E8D3B0"/><path d="M61 52 Q63 47 61 43" stroke="rgba(247,233,210,0.7)" stroke-width="1.5" fill="none" class="steam-path"/><path d="M65 51 Q67 46 65 42" stroke="rgba(247,233,210,0.7)" stroke-width="1.5" fill="none" class="steam-path" style="animation-delay:.4s"/></svg></div><div class="avatar-pulse"></div></div>
   <div class="chat-panel" id="chatPanel">
     <div class="chat-header">
-      <div class="chat-header-avatar"><svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" width="44" height="44"><circle cx="30" cy="30" r="28" fill="#1F0404" stroke="#C28A45" stroke-width="2"/><circle cx="30" cy="24" r="12" fill="#E8B98B"/><rect x="20" y="11" width="20" height="5" rx="2.5" fill="#2B0B08"/><rect x="18" y="7" width="24" height="6" rx="3" fill="#1F0404"/><ellipse cx="25" cy="22" rx="2.5" ry="3" fill="#1F0404"/><ellipse cx="35" cy="22" rx="2.5" ry="3" fill="#1F0404"/><path d="M24 29 Q30 34 36 29" stroke="#8B4513" stroke-width="1.5" fill="none" stroke-linecap="round"/><ellipse cx="21" cy="27" rx="3.5" ry="2" fill="#FF9B9B" opacity="0.35"/><ellipse cx="39" cy="27" rx="3.5" ry="2" fill="#FF9B9B" opacity="0.35"/><path d="M14 38 Q30 33 46 38 L48 60 H12 Z" fill="#1F0404"/><path d="M18 40 Q30 36 42 40 L40 60 H20 Z" fill="#F7E9D2"/></svg></div>
+      <div class="chat-header-avatar"><svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" width="44" height="44"><circle cx="30" cy="30" r="28" fill="#1F0404" stroke="#C28A45" stroke-width="2"/><circle cx="30" cy="24" r="12" fill="#E8B98B"/><ellipse cx="25" cy="22" rx="2.5" ry="3" fill="#1F0404"/><ellipse cx="35" cy="22" rx="2.5" ry="3" fill="#1F0404"/><path d="M24 29 Q30 34 36 29" stroke="#8B4513" stroke-width="1.5" fill="none"/><path d="M14 38 Q30 33 46 38 L48 60 H12 Z" fill="#1F0404"/><path d="M18 40 Q30 36 42 40 L40 60 H20 Z" fill="#F7E9D2"/></svg></div>
       <div class="chat-header-info"><h3>Morda AI Barista</h3><span class="chat-status"><span class="status-dot"></span> Online 24/7</span></div>
       <button class="chat-close" id="chatClose">✕</button>
     </div>
     <div class="chat-messages" id="chatMessages">
-      <div class="chat-msg bot"><div class="msg-icon">☕</div><p>Welcome to Morda Café! 😊 I'm your AI Barista — ask me <strong>anything</strong> about our menu, prices, hours, boba, orders, events, or anything else about the café. I'm here 24/7!</p></div>
+      <div class="chat-msg bot"><div class="msg-icon">☕</div><p>Hi there ☕️ Welcome to Morda Café. How can I help you today?</p></div>
     </div>
     <div class="chat-input-area">
       <input type="text" id="chatInput" placeholder="Ask anything about Morda Café..." autocomplete="off"/>
-      <button id="chatSend" aria-label="Send">➤</button>
+      <button id="chatSend">➤</button>
     </div>
     <div class="chat-footer-brand"><span>Powered by</span><strong>Maphake Automation</strong><span>⚡</span></div>
   </div>
-</div><canvas id="swirlCanvas"></canvas><script src="assets.js"></script><script src="app.js"></script>
+</div><canvas id="swirlCanvas"></canvas><script src="app.js"></script>
 </body></html>
